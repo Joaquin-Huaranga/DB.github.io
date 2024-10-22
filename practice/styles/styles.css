@@ -1,0 +1,125 @@
+body {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: orangered;
+  align-content: center;
+  h1 {
+    color: black;
+    text-align: center;
+    font-size: 6em;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-decoration: underline;
+  }
+}
+
+section#PresentationSection {
+  border-bottom: 0.3em solid rgb(29, 23, 23);
+  width: 100%;
+  background-color: black;
+  color: orangered;
+  nav.navigatorSection {
+    text-align: center;
+    ul {
+      justify-content: space-between;
+      display: flex;
+    }
+    a {
+      text-decoration: none;
+      li {
+        list-style: none;
+        text-decoration: none;
+        color: orangered;
+        font-size: 1.3em;
+        padding: 1em;
+        border: 0.2em solid orangered;
+        border-radius: 1em;
+      }
+    }
+  }
+}
+section#Home {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/moomomo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section#Container{
+  padding-top: 25em;
+  padding-bottom: 100em;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(/img/fondoIntro.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed ;
+
+  div.Introduction{
+    position: relative;
+    width: 100%;
+    height: 25em;
+    background-color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center;
+    h1{
+      margin: 1em;
+      font-size: 2em;
+      color: orangered;
+    }
+    p{
+      color: white;
+      font-weight: bold;
+      margin: 1em;
+      width: 50%;
+      text-align: justify;
+    }
+    div.videoContainer{
+      bottom: 10%;
+      left: 55%;
+      position: absolute;
+      width: 40%;
+      height: 75%;
+      video{
+        width: 100%;
+        height: 100%;
+        border-radius: 1em;
+      }
+    }  
+  }
+  div#Characters{
+    margin-top: 20em;
+    position: relative;
+    width: 100%;
+    height: 50em;
+    background-color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center;
+    display: flex;
+    img{
+      width: 0;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: .8;
+      transition: .5s ease;
+      &:hover{
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+      }
+    }
+  }
+  
+}
